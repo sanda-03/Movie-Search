@@ -6,7 +6,7 @@ import useKey from "./useKey";
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0).toFixed(1);
 
-const key = "93c068cf";
+const key = //get your own omdb api key;
 
 export default function App() {
   const [selectedmovie, setSelectedmovie] = useState(null);
