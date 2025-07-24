@@ -13,7 +13,7 @@ export function useMovies(query) {
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${key}&s=${query}`
+            `https://www.omdbapi.com/?apikey=${key}&s=${query}`
           );
 
           if (!res.ok) throw new Error("Abe Net kharab hein be tumhara");

@@ -356,7 +356,7 @@ function MovieInfo({ selectedmovie, closeMovieInfo, onAddMovie, watched }) {
         try {
           setIsLoading(true);
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${key}&i=${selectedmovie}`,
+            `https://www.omdbapi.com/?apikey=${key}&i=${selectedmovie}`,
             { signal: controller.signal }
           );
           const data = await res.json();
