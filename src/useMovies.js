@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const key = "93c068cf";
+const key = //get your oqwn omdb api key
 
 export function useMovies(query) {
   const [movies, setMovies] = useState([]);
